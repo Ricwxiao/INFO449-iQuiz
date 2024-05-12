@@ -10,8 +10,20 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+//    var topicId : Int = -1
+//    
+//    func setTopicId(_ id : Int) -> Bool {
+//        if id >= 0 {
+//            self.topicId = id
+//            return true
+//        }
+//        return false
+//    }
+//
+//    func getTopicId() -> Int {
+//        return self.topicId
+//    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

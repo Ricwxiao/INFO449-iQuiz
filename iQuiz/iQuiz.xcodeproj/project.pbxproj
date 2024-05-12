@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023BC7852BEC4AAB00E1F061 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BC7842BEC4AAB00E1F061 /* QuizViewController.swift */; };
+		023BC7872BEC86DF00E1F061 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BC7862BEC86DF00E1F061 /* SettingsViewController.swift */; };
 		02F121BC2BE3270E00B07E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F121BB2BE3270E00B07E4D /* AppDelegate.swift */; };
 		02F121BE2BE3270E00B07E4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F121BD2BE3270E00B07E4D /* SceneDelegate.swift */; };
 		02F121C02BE3270E00B07E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F121BF2BE3270E00B07E4D /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023BC7842BEC4AAB00E1F061 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		023BC7862BEC86DF00E1F061 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		02F121B82BE3270E00B07E4D /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F121BB2BE3270E00B07E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F121BD2BE3270E00B07E4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,8 +109,10 @@
 				02F121C12BE3270E00B07E4D /* Main.storyboard */,
 				02F121C42BE3270F00B07E4D /* Assets.xcassets */,
 				02F121EB2BE332FF00B07E4D /* Images */,
-				02F121C62BE3270F00B07E4D /* LaunchScreen.storyboard */,
 				02F121C92BE3270F00B07E4D /* Info.plist */,
+				02F121C62BE3270F00B07E4D /* LaunchScreen.storyboard */,
+				023BC7842BEC4AAB00E1F061 /* QuizViewController.swift */,
+				023BC7862BEC86DF00E1F061 /* SettingsViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				02F121C02BE3270E00B07E4D /* ViewController.swift in Sources */,
 				02F121BC2BE3270E00B07E4D /* AppDelegate.swift in Sources */,
 				02F121BE2BE3270E00B07E4D /* SceneDelegate.swift in Sources */,
+				023BC7872BEC86DF00E1F061 /* SettingsViewController.swift in Sources */,
+				023BC7852BEC4AAB00E1F061 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

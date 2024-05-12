@@ -5,12 +5,14 @@
 //  Created by Ricwxiao on 2024/5/1.
 //
 
+import Foundation
 import UIKit
 
 class QuizSelectionCell: UITableViewCell {
     @IBOutlet weak var quizIcon: UIImageView!
     @IBOutlet weak var quizSubject: UILabel!
     @IBOutlet weak var quizDescription: UILabel!
+    @IBOutlet weak var goButton: UIButton!
 }
 
 struct Quiz {
@@ -37,6 +39,10 @@ class ViewController: UIViewController, UITableViewDelegate {
             self.quizList = quizList
         }
         
+        func getQuizList() -> [Quiz] {
+            return self.quizList
+        }
+        
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return quizList.count
         }
@@ -52,6 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate {
             }
             cell.quizSubject.text = quiz.subject
             cell.quizDescription.text = quiz.desc
+//            cell.goButton.tag = id
             return cell
         }
     }
@@ -63,12 +70,30 @@ class ViewController: UIViewController, UITableViewDelegate {
         quizTable.delegate = self
     }
     
-    @IBAction func openSettings(_ sender: Any) {
-        let alertController = UIAlertController(title: "Settings", message: "Settings go here", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
+    // MARK: This was used to pop up the alert window
+//    @IBAction func openSettings(_ sender: Any) {
+//        let alertController = UIAlertController(title: "Settings", message: "Settings go here", preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//        alertController.addAction(okAction)
+//        present(alertController, animated: true, completion: nil)
+//    }
+    
+    @IBAction func goToQuiz(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToQuizSegue", sender: sender)
     }
-
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "goToQuizSegue" {
+//            if let btn = sender as? UIButton{
+//                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+//                let didSetTopicId = appDelegate.setTopicId(btn.tag)
+//                    if didSetTopicId {
+//                        print("Topic ID set successfully.")
+//                    } else {
+//                        print("Failed to set Topic ID.")
+//                    }
+//                }
+//            }
+//        }
+//    }
 }
-
